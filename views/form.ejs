@@ -104,27 +104,65 @@
         </div>
       </div>
     </form>
+
+
+    <footer>
+        <div class="d-flex align-content-end flex-wrap">
+      <div class="container mt-2">
+      <div class="d-flex align-items-end justify-content-between">
+        <div class="container">
+          <div class="container">
+            <div class="row g-2">
+              <div class="col-4">
+                <div class="">
+                  <a
+                    href="/"
+                    style="font-size: 20px; border-radius: 10px; text-decoration: none; color: rgb(84, 179, 220)"
+                    class="px-5 py-2"
+                  >
+                    <img src="./images/log1.png" alt="" />
+                    <h5 style="padding-left: 60px">Home</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="col-4">
+                <div>
+                  <a
+                    href="/options"
+                    style="font-size: 20px; border-radius: 10px; text-decoration: none; color: rgb(84, 179, 220)"
+                    class="px-5 py-2"
+                  >
+                    <img src="./images/srch.png" alt="" />
+                    <h5 style="padding-left: 60px">Search</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="col-4">
+                <div>
+                  <a
+                    href="/formpge"
+                    style="font-size: 20px; border-radius: 10px; text-decoration: none; color: rgb(84, 179, 220)"
+                    class="px-5 py-2"
+                  >
+                    <img src="./images/log1.png" style="width: 50;" alt="" />
+                    <h5 style="padding-left: 70px">My</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       </div>
+      </div>
+      </footer>
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        cssMode: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        mousewheel: true,
-        keyboard: true,
-      });
-    </script>
+   
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -147,35 +185,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script>
-      $("#card-number").on("keydown", (e) => {
-        let cardNumber = $("#card-number").val();
-        if (e.key === "Backspace") {
-          $("#card-number").val(cardNumber);
-        } else {
-          if (cardNumber.length === 4) {
-            cardNumber = cardNumber + "-";
-            $("#card-number").val(cardNumber);
-          } else if (cardNumber.length === 9) {
-            cardNumber = cardNumber + "-";
-            $("#card-number").val(cardNumber);
-          } else if (cardNumber.length === 14) {
-            cardNumber = cardNumber + "-";
-            $("#card-number").val(cardNumber);
-          }
-        }
-      });
-      $("#expiry").on("keydown", (e) => {
-        let expiry = $("#expiry").val();
-        if (e.key === "Backspace") {
-          $("#expiry").val(expiry);
-        } else {
-          if (expiry.length === 2) {
-            expiry = expiry + "/";
-            $("#expiry").val(expiry);
-          }
-        }
-      });
-    </script>
+    
   </body>
 </html>
